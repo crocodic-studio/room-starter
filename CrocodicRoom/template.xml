@@ -1,0 +1,24 @@
+<template format="5"
+          revision="1"
+          name="Room Application Starter Pack"
+          description="Android Application Starter Pack Generator with MVVM Architecture Component, featured Dagger2 Injection, Retrofit, LiveData, also Room Database"
+          minApi="21">
+
+    <category value="Crocodic"/>
+
+    <globals file="globals.xml.ftl"/>
+    <execute file="recipe.xml.ftl"/>
+    
+    <thumbs>
+        <thumb>template_thumbnail.png</thumb>
+    </thumbs>
+
+     <parameter
+        id="baseUrl"
+        name="RestAPI Base URL"
+        type="string"
+        constraints="unique|nonempty"
+        default="http://neptune.crocodic.net/apps/public/api/"
+        help="Base url of your rest API" />
+        
+</template>
